@@ -431,7 +431,6 @@ main {
 @supports (-webkit-touch-callout: none) {
   body {
     background-attachment: scroll !important;
-    background-position: center center !important;
-    background-size: cover !important;
   }
 }
+

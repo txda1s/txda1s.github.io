@@ -162,16 +162,10 @@ footer {
   padding: 40px 0;
 }
 
-@media screen and (max-width: 1440px) {
-  .thumbnails {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 @media screen and (max-width: 1024px) {
 
     body {
-    background: url('../../image/background\ 2.png');
+    background: url('../../../image/background\ 2.png');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -185,57 +179,46 @@ footer {
     height: 36px;
   }
 
-    .back-button {
-    top: 133px;
-    left: 10px;
+    .portfolio-detail {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 180px;
   }
 
-.back-button img {
-  width: 25px;
-  height: auto;
-}
-
-    .top-text h2 {
-   font-size: 45px;
+  .portfolio-detail h3 {
+    font-size: 32px;
   }
 
-  .top-text p {
-   font-size: 25px;
-   margin-top: 20px;
+  .portfolio-detail p {
+    font-size: 18px;
   }
 
-  .portfolio-item {
-    text-align: left;
+  .portfolio-detail p1 {
+    font-size: 14px;
   }
 
-  .portfolio-item h3,
-  .portfolio-item p {
-  margin-left: 43px;
-  }
-  .top-text {
-    margin-top: 150px;
-    text-align: center;
-    padding: 0 20px;
+  .portfolio-detail img {
+    width: 100%;
   }
 
+  .back-button {
+    top: 100px;
+    left: -10px;
+  }
+
+  .back-button img {
+    width: 25px;
+  }
 
   footer {
     font-size: 13px;
   }
 }
 
-@media screen and (max-width: 960px) {
-  .thumbnails {
-    grid-template-columns: repeat(1, minmax(auto, 640px));
-    max-width: 720px;
-    padding: 80px 40px;
-  }
-}
-
 @media screen and (max-width: 768px) {
 
     body {
-    background: url('../../image/background\ 3.png');
+    background: url('../../../image/background\ 3.png');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -264,46 +247,34 @@ footer {
     margin-left: 10px;
   }
 
-    .back-button {
-    top: 103px;
-    left: -5px;
+    .portfolio-detail {
+    margin: 160px 20px 0 20px;
+    text-align: left;
+  }
+
+  .portfolio-detail h3 {
+    font-size: 24px;
+  }
+
+  .portfolio-detail p {
+    font-size: 16px;
+  }
+
+  .portfolio-detail p1 {
+    font-size: 13px;
+  }
+
+  .portfolio-detail img {
+    width: 100%;
+  }
+
+  .back-button {
+    top: 100px;
+    left: -4px;
   }
 
   .back-button img {
     width: 15px;
-  }
-
-  .thumbnails {
-    margin-top: -80px;
-  }
-
-    .top-text h2{
-    font-size: 35px;
-  }
-
-  .top-text p{
-    font-size: 15px;
-    margin-top: 10px;
-  }
-
-  .portfolio-item {
-    text-align: left; /* 텍스트 왼쪽 정렬 */
-  }
-
-  .portfolio-item h3{
-  margin-left: 25px;
-    font-size: 19px;
-  }
-
-  .portfolio-item p{
-  margin-left: 25px;
-    font-size: 14px;
-  }
-
-  .top-text {
-    margin: 120px 20px 0 20px;
-    text-align: center;
-    margin-bottom: 60px;
   }
 
   footer {
@@ -311,15 +282,6 @@ footer {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .thumbnails {
-    grid-template-columns: repeat(1, 1fr);
-  }
-}
-
-
-
-/* 뷰포트 가로폭이 좁은(420dp 이하) 스마트폰 대응 미디어쿼리 */
 @media screen and (max-width: 420px) {
   .nav-menu {
     gap: 10px;

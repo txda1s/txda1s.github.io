@@ -227,7 +227,7 @@ main {
 
 @media screen and (max-width: 1024px) {
   body::before {
-    background-image: url('./image/background\ 2-1.png');
+    background-image: url('./image/background\ 2.png');
   }
   .showcase-section {
     margin: 160px 40px 0 40px;
@@ -267,7 +267,7 @@ main {
 
 @media screen and (max-width: 768px) {
   body::before {
-    background-image: url('./image/background\ 3-1.png');
+    background-image: url('./image/background\ 3.png');
   }
 
    .showcase-section {

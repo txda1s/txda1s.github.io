@@ -35,8 +35,7 @@ body {
   font-family: 'neo', sans-serif;
   color: white;
   background: url('./image/background\ 1-1.png');
-  background-size: cover;
-    
+  object-fit:cover;
   position: relative;
   overflow-x: hidden;
 }
@@ -296,11 +295,11 @@ main {
 
 
 @media screen and (max-width: 1024px) {
-  body {
-    background: url('./image/background 2-1.png') no-repeat center center;
-    background-size: cover;
-    /* background-attachment: fixed; -> 제거 */
-    background-attachment: scroll; /* 또는 제거 */
+
+    body {
+    background: url('./image/background\ 2-1.png');
+    object-fit: cover;
+    background-position: center;
   }
 
   .nav-menu li a {
@@ -343,11 +342,11 @@ main {
 
 
 @media screen and (max-width: 768px) {
-  body {
-    background: url('./image/background 3-1.png') no-repeat center center;
-    background-size: cover;
-    /* background-attachment: fixed; -> 제거 */
-    background-attachment: scroll; /* 또는 제거 */
+
+    body {
+    background: url('./image/background\ 3-1.png');
+    object-fit:cover;
+    background-position: center;
   }
 
   .nav-menu {
@@ -425,12 +424,6 @@ main {
   }
   .info-section > h2 > span {
     font-size: 24px;
-  }
-}
-
-@supports (-webkit-touch-callout: none) {
-  body {
-    background-attachment: scroll !important;
   }
 }
 

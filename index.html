@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>NMGD Showcase - Summer 2025</title>
+  <link rel="stylesheet" href="index.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+</div>
+      <div class="top-bar-background"></div>  
+  <header>
+    <a href="index.html">
+      <img src="image/logo.png" alt="로고" class="logo">
+    </a>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="about.html">About</a></li>
+        <li><a href="works.html">Works</a></li>
+        <li><a href="awards.html">NMGDAwards</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <img 
+    src="image/ufo_ani.png" 
+    alt="아이콘 이미지" 
+    class="icon"
+    data-static="image/ufo_ani.png"
+    data-animated="image/ufo_ani.gif"
+  />
+
+    <img 
+    src="image/pc_ani.png" 
+    alt="아이콘 이미지" 
+    class="icon_1"
+    data-static="image/pc_ani.png"
+    data-animated="image/pc_ani.gif"
+  />
+
+    <img 
+    src="image/cat_ani.png" 
+    alt="아이콘 이미지" 
+    class="icon_2"
+    data-static="image/cat_ani.png"
+    data-animated="image/cat_ani.gif"
+  />
+
+    <div class="title-center">
+      <h1 class="main-title">NMGD<br>SHOWCASE</h1>
+      <p class="subtitle">대구가톨릭대학교 뉴미디어&게임디자인과 2025년 1학기 온라인 과제전</p>
+    </div>
+
+    <section class="info-section">
+      <h2>대구가톨릭대학교<br><span>뉴미디어&게임디자인과</span></h2>
+      <div class="description-wrapper">
+        <p class="description">
+          우리 학과는 고부가가치의 <strong>차세대 K-콘텐츠</strong>와 창의적인 <strong>뉴미디어 사용자경험</strong>을 만들어 낼 융합디자인 전문가 양성을 목표로 합니다. 여러분은 <strong>게임</strong>과 <strong>캐릭터 디자인, UI/UX 디자인, 뉴미디어 브랜딩, 3D 컴퓨터그래픽과 애니메이션, AI/실감미디어 디자인</strong> 등에 관한 수업을 통해 <strong>첨단 엔터테인먼트산업</strong>과 <strong>최신 융합디자인</strong>을 경험하게 됩니다. 뉴미디어&게임디자인과는 메타버스 아카데미 사업(경상북도, 2025), 소프트웨어 중심대학 사업(과학기술정보통신부, 2019-2024)에 참여하여 최신 디자인 분야의 다양한 실무경험 기회를 제공하고 있습니다.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>대구가톨릭대학교 뉴미디어&게임디자인과<br>
+      38430 경상북도 경산시 하양읍 하양로 13-13 성카타리나관(D15)<br>
+      053-850-3920, helpdx@gmail.com</p>
+  </footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const icon = document.querySelector('.icon');
+    if (!icon) return;
+
+    const staticSrc = icon.getAttribute('data-static');
+    const animatedSrc = icon.getAttribute('data-animated');
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    let isAnimating = false;
+
+    if (!isTouchDevice) {
+      // PC: 마우스 호버로 애니메이션
+      icon.addEventListener('mouseenter', () => {
+        icon.src = animatedSrc;
+      });
+      icon.addEventListener('mouseleave', () => {
+        icon.src = staticSrc;
+      });
+    } else {
+      // 모바일: 터치 1회 → 4초 재생 → 다시 PNG
+      icon.addEventListener('click', () => {
+        if (isAnimating) return; // 이미 애니메이션 중이면 무시
+        isAnimating = true;
+
+        icon.src = animatedSrc;
+
+        setTimeout(() => {
+          icon.src = staticSrc;
+          isAnimating = false;
+        }, 4000); // 4초 후 다시 원래 이미지로
+      });
+    }
+  });
+
+      document.addEventListener("DOMContentLoaded", function () {
+    const icon = document.querySelector('.icon_1');
+    if (!icon) return;
+
+    const staticSrc = icon.getAttribute('data-static');
+    const animatedSrc = icon.getAttribute('data-animated');
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    let isAnimating = false;
+
+    if (!isTouchDevice) {
+      // PC: 마우스 호버로 애니메이션
+      icon.addEventListener('mouseenter', () => {
+        icon.src = animatedSrc;
+      });
+      icon.addEventListener('mouseleave', () => {
+        icon.src = staticSrc;
+      });
+    } else {
+      // 모바일: 터치 1회 → 4초 재생 → 다시 PNG
+      icon.addEventListener('click', () => {
+        if (isAnimating) return; // 이미 애니메이션 중이면 무시
+        isAnimating = true;
+
+        icon.src = animatedSrc;
+
+        setTimeout(() => {
+          icon.src = staticSrc;
+          isAnimating = false;
+        }, 4000); // 4초 후 다시 원래 이미지로
+      });
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const icon = document.querySelector('.icon_2');
+    if (!icon) return;
+
+    const staticSrc = icon.getAttribute('data-static');
+    const animatedSrc = icon.getAttribute('data-animated');
+    const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    let isAnimating = false;
+
+    if (!isTouchDevice) {
+      // PC: 마우스 호버로 애니메이션
+      icon.addEventListener('mouseenter', () => {
+        icon.src = animatedSrc;
+      });
+      icon.addEventListener('mouseleave', () => {
+        icon.src = staticSrc;
+      });
+    } else {
+      // 모바일: 터치 1회 → 4초 재생 → 다시 PNG
+      icon.addEventListener('click', () => {
+        if (isAnimating) return; // 이미 애니메이션 중이면 무시
+        isAnimating = true;
+
+        icon.src = animatedSrc;
+
+        setTimeout(() => {
+          icon.src = staticSrc;
+          isAnimating = false;
+        }, 4000); // 4초 후 다시 원래 이미지로
+      });
+    }
+  });
+
+</script>
+
+
+</body>
+</html>
